@@ -1,0 +1,28 @@
+.header {
+    padding-top: 1.8rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        padding: 1rem 3.5rem;
+
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem; /* 125% */
+    }
+}

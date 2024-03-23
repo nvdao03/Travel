@@ -1,0 +1,7 @@
+@use "../abstracts";
+
+.logo {
+    @include abstracts.screen(lg) {
+        width: 13rem;
+    }
+}

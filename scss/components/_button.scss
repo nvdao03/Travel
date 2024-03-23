@@ -1,0 +1,24 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 100%;
+
+    padding: 1.5rem 3rem;
+
+    &--primary {
+        border-radius: 0.5rem;
+        border: 0.1rem solid #000;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: #1bbc9b;
+            border-color: #1bbc9b;
+            color: #fff;
+        }
+    }
+}

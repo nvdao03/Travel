@@ -1,0 +1,10 @@
+@use "../abstracts";
+
+.logo {
+    &__link {
+        @include abstracts.screen(lg) {
+            width: 13rem;
+            margin-top: 0.4rem;
+        }
+    }
+}
