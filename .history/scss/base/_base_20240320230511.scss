@@ -1,0 +1,202 @@
+@use "sass:math";
+@use "../abstracts";
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    // font-family: "Aeonik TRIAL";
+    font-family: "Gordita";
+    color: var(--body-text-color);
+    background-color: var(--body-bg);
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    user-select: none;
+}
+
+span {
+    user-select: none;
+}
+
+button,
+select,
+textarea,
+input {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Clash Display";
+}
+
+.icon {
+    filter: var(--icon-color);
+}
+
+.heading-section-lv1 {
+    font: {
+        size: 8rem;
+        weight: 600;
+    }
+    line-height: 122.5%;
+
+    @include abstracts.screen(xl) {
+        font-size: 7rem;
+    }
+}
+
+.heading-section-lv2 {
+    font: {
+        size: 5.6rem;
+        weight: 500;
+    }
+    line-height: 107.143%;
+
+    @include abstracts.screen(xl) {
+        font-size: 4.6rem;
+    }
+}
+
+.heading-section-lv3 {
+    font: {
+        size: 5rem;
+        weight: 500;
+    }
+    line-height: 120%;
+
+    @include abstracts.screen(xl) {
+        font-size: 4rem;
+    }
+}
+
+.heading-section-lv4 {
+    font: {
+        size: 3.6rem;
+    }
+    line-height: 1.27;
+
+    @include abstracts.screen(xl) {
+        font-size: 2.6rem;
+    }
+}
+
+.heading-section-lv5 {
+    font: {
+        size: 3.4rem;
+    }
+    line-height: 1.35;
+
+    @include abstracts.screen(xl) {
+        font-size: 2.4rem;
+    }
+}
+
+.heading-section-lv6 {
+    font: {
+        size: 3rem;
+    }
+    line-height: 1;
+
+    @include abstracts.screen(xl) {
+        font-size: 2.5rem;
+    }
+}
+
+.heading-section-lv7 {
+    font: {
+        size: 2.8rem;
+    }
+    line-height: 1.07;
+
+    @include abstracts.screen(xl) {
+        font-size: 2.3rem;
+    }
+}
+
+.heading-section-lv8 {
+    font: {
+        size: 2.4rem;
+    }
+    line-height: 1.25;
+
+    @include abstracts.screen(xl) {
+        font-size: 1.9rem;
+    }
+}
+
+.container {
+    @include abstracts.screen(sm) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.container-half {
+    margin-left: calc((100% - 1170px) * 0.5);
+    padding-left: 15px;
+
+    @include abstracts.screen(xl) {
+        margin-left: calc((100% - 960px) * 0.5);
+        padding-left: 15px;
+    }
+
+    @include abstracts.screen(lg) {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @include abstracts.screen(md) {
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @include abstracts.screen(sm) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
