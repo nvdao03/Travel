@@ -1469,6 +1469,7 @@ button {
 }
 .location__city-item {
   position: relative;
+  cursor: pointer;
 }
 .location__city-bg {
   width: 100%;
@@ -1656,6 +1657,124 @@ button {
   height: 0.3rem;
   background-color: #000;
   opacity: 0.3;
+}
+
+.vocation {
+  margin-top: 10rem;
+  background: #f2f2f2;
+  padding: 12rem 0;
+}
+@media (max-width: 767.98px) {
+  .vocation {
+    margin-top: 3rem;
+    padding: 7rem 0;
+  }
+}
+.vocation__heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+}
+@media (max-width: 575.98px) {
+  .vocation__heading {
+    font-size: 2.5rem;
+  }
+}
+.vocation__desc {
+  width: 77rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+@media (max-width: 991.98px) {
+  .vocation__desc {
+    width: 100%;
+  }
+}
+.vocation__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 991.98px) {
+  .vocation__row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    margin-top: 4rem;
+  }
+}
+.vocation__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-left: 3rem;
+}
+@media (max-width: 1199.98px) {
+  .vocation__item {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .vocation__item {
+    padding-left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .vocation__item {
+    gap: 1.5rem;
+  }
+}
+.vocation__item + .vocation__item {
+  border-left: 0.2rem solid #f1f1f1;
+}
+@media (max-width: 991.98px) {
+  .vocation__item + .vocation__item {
+    border-left: none;
+  }
+}
+.vocation__item:first-child {
+  padding-left: 0;
+}
+.vocation__item:last-child {
+  border-left: none;
+}
+@media (max-width: 575.98px) {
+  .vocation__item:last-child {
+    grid-column-start: -3;
+    grid-column-end: -1;
+  }
+}
+.vocation__title {
+  font-style: normal;
+  font-weight: 700;
+}
+.vocation__text {
+  color: #757575;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0.7rem;
+}
+.vocation__btn {
+  width: 100%;
+  color: #fff;
+  background: #f76570;
+  border-color: #f76570;
+  padding: 2rem 0;
+}
+@media (max-width: 575.98px) {
+  .vocation__btn {
+    padding: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
