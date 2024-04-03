@@ -1,0 +1,203 @@
+@use "../abstracts";
+
+.card {
+    &--home {
+        margin-top: 10.5rem;
+
+        @include abstracts.screen(lg) {
+            margin-top: 4.5rem;
+        }
+        @include abstracts.screen(md) {
+            margin-top: 2.5rem;
+        }
+    }
+
+    &__capital-inner:hover &__location:not(:hover) {
+        filter: blur(1rem);
+    }
+
+    &__location {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+
+        cursor: pointer;
+
+        transition: filter 0.3s ease-in-out;
+    }
+
+    &__media {
+        display: flex;
+
+        position: relative;
+
+        width: 100%;
+
+        &-img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &-text {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0.5rem 1.5rem;
+            border-radius: 1.5rem;
+            background: #14b9d5;
+
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
+        padding: 3rem;
+        border-radius: 0rem 0rem 1.5rem 1.5rem;
+        background: #fff;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 1.5rem 2rem;
+
+            border-radius: 0.5rem;
+            background: #fff;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        &-title {
+            margin-top: 3rem;
+            margin-bottom: 0.5rem;
+
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        &-separate {
+            width: 100%;
+            height: 0.1rem;
+            background: #e4e4e4;
+
+            margin: 2rem 0;
+        }
+
+        &-separate--bottom {
+            @include abstracts.screen(xl) {
+                margin-top: auto;
+            }
+
+            @include abstracts.screen(lg) {
+                margin-top: 2rem;
+            }
+        }
+
+        &-desc {
+            color: #6e6e6e;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include abstracts.screen(xl) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        &-btn {
+            @include abstracts.screen(xl) {
+                order: 2;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+
+        &-price {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            @include abstracts.screen(xl) {
+                order: 1;
+
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+
+                width: 100%;
+            }
+        }
+
+        &-text {
+            color: #6e6e6e;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.1rem;
+        }
+
+        &-total {
+            color: #000;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        &-sale {
+            position: relative;
+
+            color: #000;
+
+            opacity: 0.4;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 100%;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                width: 100%;
+                height: 0.3rem;
+                background-color: #000;
+                opacity: 0.3;
+            }
+        }
+    }
+}
