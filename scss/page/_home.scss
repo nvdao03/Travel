@@ -120,8 +120,8 @@
         line-height: 130%;
         text-align: center;
 
-        @include abstracts.screen(sm) {
-            font-size: 2.5rem;
+        @include abstracts.screen(md) {
+            font-size: 3rem;
         }
     }
 
@@ -248,6 +248,10 @@
             width: 100%;
             font-size: 4rem;
         }
+
+        @include abstracts.screen(md) {
+            font-size: 3rem;
+        }
     }
 
     &__desc {
@@ -367,7 +371,7 @@
             font-size: 4rem;
         }
 
-        @include abstracts.screen(sm) {
+        @include abstracts.screen(md) {
             font-size: 3rem;
         }
     }
@@ -403,5 +407,295 @@
     &__btn {
         margin-top: 2.1rem;
         border-color: #fff;
+    }
+}
+
+.packages {
+    padding: 12rem 0;
+    text-align: center;
+
+    @include abstracts.screen(lg) {
+        padding: 8rem 0;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 4rem 0;
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 120%;
+
+        @include abstracts.screen(md) {
+            font-size: 3rem;
+        }
+    }
+
+    &__desc {
+        width: 79rem;
+
+        color: #6e6e6e;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        margin-top: 6rem;
+
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
+    }
+
+    &__card {
+        padding: 7rem 5rem;
+        border-radius: 1.5rem;
+        background: #f2f2f2;
+        height: 100%;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-2rem);
+        }
+
+        @include abstracts.screen(lg) {
+            padding: 3rem 1rem;
+        }
+
+        @include abstracts.screen(md) {
+            padding: 3rem;
+        }
+    }
+
+    &__card-intro {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 150%;
+
+        @include abstracts.screen(xl) {
+            white-space: nowrap;
+        }
+
+        @include abstracts.screen(lg) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__card-price {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 40%;
+
+        margin-top: 7rem;
+        margin-bottom: 4.1rem;
+
+        @include abstracts.screen(lg) {
+            margin-top: 5rem;
+        }
+    }
+
+    &__card-highlight {
+        font-size: 8rem;
+        font-weight: 700;
+        line-height: 10%;
+
+        @include abstracts.screen(xl) {
+            font-size: 6rem;
+        }
+
+        @include abstracts.screen(md) {
+            font-size: 5rem;
+        }
+    }
+
+    &__card-content {
+    }
+
+    &__card-desc {
+        color: #6e6e6e;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    &__card-desc + &__card-desc {
+        margin-top: 2rem;
+    }
+
+    &__btn {
+        margin-top: 3.1rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include abstracts.screen(md) {
+            width: 100%;
+        }
+    }
+}
+
+.experiences {
+    padding: 12rem 0;
+
+    background-image: url("../../assets/imgs/experience/experience__bgr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #fff;
+
+    @include abstracts.screen(lg) {
+        padding: 8rem 0;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 4rem 0;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        width: 46%;
+
+        @include abstracts.screen(xl) {
+            width: 60%;
+        }
+
+        @include abstracts.screen(lg) {
+            width: 71%;
+        }
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 120%;
+
+        @include abstracts.screen(lg) {
+            font-size: 3rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+
+        margin-top: 2rem;
+
+        @include abstracts.screen(sm) {
+            width: 85%;
+        }
+    }
+
+    &__media {
+        @include abstracts.screen(md) {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+
+        margin-top: 9rem;
+
+        @include abstracts.screen(md) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+
+            margin-top: 3rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        padding: 5rem 5rem 5.7rem 5rem;
+
+        border-radius: 1.5rem;
+        background: #1bbc9b;
+
+        cursor: pointer;
+
+        @include abstracts.screen(lg) {
+            padding: 4rem;
+        }
+
+        @include abstracts.screen(lg) {
+            padding: 2rem;
+        }
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 150%;
+
+        padding-bottom: 2.5rem;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__inline {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: auto;
+    }
+
+    &__img {
+        width: 4.5rem;
+        height: 4.5rem;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    &__info-desc {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 50%;
+
+        margin-top: 0.5rem;
     }
 }
