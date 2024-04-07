@@ -1563,6 +1563,68 @@ button {
   }
 }
 
+.footer {
+  background: url("../../assets/imgs/footer/footer__bgr.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  padding: 12rem 0 16rem;
+}
+.footer__heading {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+.footer__item + .footer__item {
+  margin-top: 2rem;
+}
+.footer__link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.footer__link--title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 50%;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social-item:first-child {
+  margin-left: -1rem;
+}
+.footer__social-link {
+  padding: 0 1rem;
+}
+.footer__contact-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.footer__contact-link--email {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #1bbc9b;
+  padding: 1.5rem 3rem;
+}
+.footer__contact-link--phone {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.footer__contact-link--title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 50%;
+}
+
 .hero-home {
   position: relative;
   width: 100%;
