@@ -1,0 +1,12 @@
+.hero-search {
+    margin-top: 8.2rem;
+    height: calc(100vh - 8.2rem);
+
+    overflow-y: hidden;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

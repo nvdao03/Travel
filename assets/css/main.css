@@ -2677,4 +2677,15 @@ button {
   }
 }
 
+.hero-search {
+  margin-top: 8.2rem;
+  height: calc(100vh - 8.2rem);
+  overflow-y: hidden;
+}
+.hero-search__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=main.css.map */
