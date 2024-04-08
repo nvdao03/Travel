@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .footer {
     background: url("../../assets/imgs/footer/footer__bgr.jpg");
     background-repeat: no-repeat;
@@ -5,11 +7,39 @@
 
     padding: 12rem 0 16rem;
 
+    @include abstracts.screen(lg) {
+        padding: 8rem 0;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 4rem 0;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        gap: 5rem;
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: 1fr;
+        }
+    }
+
     &__heading {
         color: #fff;
         font-size: 5rem;
         font-weight: 700;
         line-height: 120%;
+
+        width: 50rem;
+
+        @include abstracts.screen(xl) {
+            width: 100%;
+        }
+
+        @include abstracts.screen(md) {
+            font-size: 3rem;
+        }
     }
 
     &__item + &__item {
@@ -26,7 +56,6 @@
         color: #fff;
         font-size: 2rem;
         font-weight: 700;
-        line-height: 50%;
     }
 
     &__social {
@@ -63,13 +92,11 @@
         color: #fff;
         font-size: 2.5rem;
         font-weight: 700;
-        line-height: 150%;
     }
 
     &__contact-link--title {
         color: #fff;
         font-size: 2rem;
         font-weight: 700;
-        line-height: 50%;
     }
 }

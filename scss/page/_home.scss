@@ -872,6 +872,14 @@
 .blog {
     padding: 0 0 12rem;
 
+    @include abstracts.screen(lg) {
+        padding: 8rem 0;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 4rem 0;
+    }
+
     &__heading {
         color: #000;
         text-align: center;
