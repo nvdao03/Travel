@@ -1390,6 +1390,9 @@ button {
   line-height: 100%;
   letter-spacing: 0.1rem;
 }
+.card__media-text--grey {
+  background: #434a54;
+}
 .card__content {
   display: flex;
   flex-direction: column;
@@ -1419,6 +1422,9 @@ button {
   font-size: 2rem;
   font-weight: 700;
   line-height: 150%;
+}
+.card__content-title--mt {
+  margin-top: 0;
 }
 .card__content-separate {
   width: 100%;
@@ -1641,6 +1647,15 @@ button {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.1rem;
+}
+.form-detail__money {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.form-detail__price {
+  font-size: 3.5rem;
+  line-height: 130%;
 }
 .form-detail__vertical {
   display: inline-block;
@@ -3125,6 +3140,32 @@ button {
   .detail__right {
     padding: 2rem;
   }
+}
+
+.package-detail {
+  padding: 12rem 0;
+}
+@media (max-width: 991.98px) {
+  .package-detail {
+    padding: 8rem 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .package-detail {
+    padding: 4rem 0;
+  }
+}
+.package-detail__heading {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+.package-detail__card-heading {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

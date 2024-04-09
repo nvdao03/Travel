@@ -258,3 +258,31 @@
         }
     }
 }
+
+.package-detail {
+    padding: 12rem 0;
+
+    @include abstracts.screen(lg) {
+        padding: 8rem 0;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 4rem 0;
+    }
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    // ? Card
+    &__card-heading {
+        margin-top: 0;
+    }
+}
