@@ -54,6 +54,51 @@ button {
     cursor: pointer;
 }
 
+// ? Common
+.heading-section-lv1 {
+    font-size: 7.2rem;
+    font-weight: 700;
+    line-height: 120%;
+
+    @include abstracts.screen(md) {
+        font-size: 5rem;
+    }
+}
+
+.heading-section-lv2 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+
+    @include abstracts.screen(md) {
+        font-size: 4rem;
+    }
+}
+
+.heading-section-lv3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+
+    @include abstracts.screen(md) {
+        font-size: 3rem;
+    }
+}
+
+.container-share {
+    padding: 12rem 0;
+
+    @include abstracts.screen(lg) {
+        padding: 8rem 0;
+    }
+
+    @include abstracts.screen(md) {
+        padding: 4rem 0;
+    }
+}
+
 .container {
     @include abstracts.screen(sm) {
         padding-left: 2rem;
