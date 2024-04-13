@@ -1,15 +1,19 @@
 @use "../abstracts";
 
-.hero-search {
+.search-bannner {
     position: relative;
 
-    margin-top: 8.2rem;
-    padding-top: 27.55208%;
+    margin-top: 10.2rem;
 
     overflow-y: hidden;
 
     @include abstracts.screen(md) {
-        margin-top: 7.6rem;
+        margin-top: 10.2rem;
+    }
+
+    &__wrap {
+        padding-top: 39.16666%;
+        position: relative;
     }
 
     &__img {
@@ -19,6 +23,10 @@
         right: 0;
 
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        border-radius: 1.5rem;
     }
 }
 

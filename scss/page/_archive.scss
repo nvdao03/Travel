@@ -1,34 +1,14 @@
 @use "../abstracts";
 
-.hero-archive {
-    position: relative;
-
-    margin-top: 8.2rem;
-    padding-top: 26%;
-
-    overflow-y: hidden;
-
-    @include abstracts.screen(md) {
-        margin-top: 7.6rem;
-    }
-
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-    }
-}
-
 .main-archive {
-    padding: 12rem 0;
+    margin-top: 8.2rem;
+    padding: 4rem 0;
 
     @include abstracts.screen(lg) {
-        padding: 8rem 0;
+        padding: 4rem 0;
     }
 
     @include abstracts.screen(md) {
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
 }
