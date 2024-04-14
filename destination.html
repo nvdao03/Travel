@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Love Travel | Destinations</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Javascript -->
+        <script src="./assets/js/app.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Bannenr -->
+        <section class="destination-banner">
+            <div class="container">
+                <figure class="destination-banner__imgs">
+                    <img src="./assets/imgs/destinations/banner.svg" alt="" class="destination-banner__img" />
+                    <div class="destination-banner__overlay"></div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <main style="height: 5000px" class="main-destination">
+            <!-- Discover -->
+            <section class="discover-destination">
+                <div class="container">
+                    <!-- Top -->
+                    <div class="discover-destination__inline">
+                        <div class="discover-destination__top">
+                            <!-- Item 1 -->
+                            <a href="#!" class="discover-destination__col">
+                                <figure class="discover-destination__icons">
+                                    <img src="./assets/icons/plane.svg" alt="" class="discover-destination__icon" />
+                                </figure>
+                                <div class="discover-destination__content">
+                                    <span class="discover-destination__text">Packages</span>
+                                    <span class="discover-destination__title">3 Availiable</span>
+                                </div>
+                            </a>
+                            <!-- Item 2 -->
+                            <a href="tel:0985732825">
+                                <div class="discover-destination__col">
+                                    <figure class="discover-destination__icons">
+                                        <img
+                                            src="./assets/icons/microphone.svg"
+                                            alt=""
+                                            class="discover-destination__icon"
+                                        />
+                                    </figure>
+                                    <div class="discover-destination__content">
+                                        <span class="discover-destination__text">Sue Black</span>
+                                        <span class="discover-destination__title">+ 0985 732 825</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Item 3 -->
+                            <a href="mailto:nvdao003@gmail.com" class="discover-destination__col">
+                                <figure class="discover-destination__icons">
+                                    <img src="./assets/icons/emaill.svg" alt="" class="discover-destination__icon" />
+                                </figure>
+                                <div class="discover-destination__content">
+                                    <span class="discover-destination__text">Contact Us</span>
+                                    <span class="discover-destination__title">nvdao003@gmail.com</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bottom -->
+                    <div class="discover-destination__body">
+                        <figure class="discover-destination__media">
+                            <img
+                                src="./assets/imgs/archive/chiang_mai.svg"
+                                alt="Chingang Mai"
+                                class="discover-destination__picture discover-destination__picture--left"
+                            />
+                            <img
+                                src="./assets/imgs/archive/chao.svg"
+                                alt="Chao Phraya"
+                                class="discover-destination__picture discover-destination__picture--right"
+                            />
+                        </figure>
+                        <div class="discover-destination__info">
+                            <h2 class="heading-section-lv2 discover-destination__heading">
+                                Discover Your Dream Destination
+                            </h2>
+                            <p class="discover-destination__desc">
+                                To find good deals on flights and accommodations, there are several tips and tricks that
+                                can be followed. Firstly, it is important to know the typical prices for flights and
+                                hotels for the desired destinations.
+                            </p>
+                            <p class="discover-destination__quality discover-destination__quality--top">
+                                Review and Payment
+                            </p>
+                            <p class="discover-destination__quality discover-destination__quality--center">
+                                Activities and Transportation
+                            </p>
+                            <p class="discover-destination__quality discover-destination__quality--bottom">
+                                Destination and Travel Dates
+                            </p>
+                            <a href="./contact" class="btn btn--primary discover-destination__btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>
