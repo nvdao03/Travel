@@ -1,0 +1,104 @@
+@use "../abstracts";
+
+.main-typologies {
+    padding-top: 8.2rem;
+}
+
+.typologies {
+    margin: 4rem 0;
+
+    @include abstracts.screen(md) {
+        margin: 2rem 0;
+    }
+
+    &__media {
+        position: relative;
+
+        width: 100%;
+        height: 42rem;
+
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        border-radius: 1.5rem;
+    }
+
+    &__overlay {
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+
+        border-radius: 1.5rem;
+        opacity: 0.5;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    }
+
+    &__price {
+        position: absolute;
+        z-index: 2;
+        top: 3.3rem;
+        right: 3rem;
+
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1;
+
+        padding: 0.7rem 1.5rem;
+
+        border-radius: 3rem;
+        background: #1bbc9b;
+    }
+
+    &__info {
+        width: 80%;
+
+        position: absolute;
+        z-index: 2;
+        bottom: 3.1rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.82rem;
+
+        margin-top: 1.1rem;
+    }
+
+    &__icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(50deg) brightness(107%)
+            contrast(101%);
+    }
+
+    &__location {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: center;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
