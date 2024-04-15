@@ -295,3 +295,17 @@
         margin-top: 4rem;
     }
 }
+
+// ? packages-destination
+.package-destination {
+    padding: 0;
+    margin: 18rem 0 8rem;
+
+    @include abstracts.screen(lg) {
+        margin-top: 8rem;
+    }
+
+    @include abstracts.screen(sm) {
+        margin-top: 4rem;
+    }
+}
