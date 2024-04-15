@@ -2,6 +2,10 @@
 
 .main-preview {
     margin-top: 8.2rem;
+
+    @include abstracts.screen(lg) {
+        margin-top: 7.6rem;
+    }
 }
 
 .solution {

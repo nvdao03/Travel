@@ -2890,11 +2890,6 @@ button {
   margin-top: 10.2rem;
   overflow-y: hidden;
 }
-@media (max-width: 767.98px) {
-  .search-bannner {
-    margin-top: 10.2rem;
-  }
-}
 .search-bannner__wrap {
   padding-top: 39.16666%;
   position: relative;
@@ -2952,7 +2947,7 @@ button {
 .hero-detail {
   margin-top: 8.2rem;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .hero-detail {
     margin-top: 7.6rem;
   }
@@ -3204,6 +3199,7 @@ button {
 @media (max-width: 991.98px) {
   .main-archive {
     padding: 4rem 0;
+    margin-top: 7.6rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -3214,6 +3210,11 @@ button {
 
 .main-preview {
   margin-top: 8.2rem;
+}
+@media (max-width: 991.98px) {
+  .main-preview {
+    margin-top: 7.6rem;
+  }
 }
 
 .solution {
@@ -4117,6 +4118,11 @@ button {
 .main-typologies {
   padding-top: 8.2rem;
 }
+@media (max-width: 991.98px) {
+  .main-typologies {
+    margin-top: 7.6rem;
+  }
+}
 
 .typologies {
   margin: 4rem 0;
@@ -4195,6 +4201,186 @@ button {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.main-about {
+  margin-top: 8.2rem;
+}
+@media (max-width: 991.98px) {
+  .main-about {
+    margin-top: 7.6rem;
+  }
+}
+
+.agency {
+  padding: 12rem 0 6rem;
+}
+@media (max-width: 1399.98px) {
+  .agency {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .agency {
+    padding-top: 2rem;
+  }
+}
+.agency__body {
+  display: flex;
+  align-items: center;
+  column-gap: 16.6rem;
+}
+@media (max-width: 1199.98px) {
+  .agency__body {
+    column-gap: 10rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .agency__body {
+    flex-direction: column;
+    row-gap: 15rem;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 575.98px) {
+  .agency__body {
+    row-gap: 3rem;
+  }
+}
+.agency__left {
+  width: 46%;
+}
+@media (max-width: 1199.98px) {
+  .agency__left {
+    width: 50%;
+  }
+}
+@media (max-width: 991.98px) {
+  .agency__left {
+    width: 80%;
+  }
+}
+@media (max-width: 575.98px) {
+  .agency__left {
+    width: 100%;
+  }
+}
+.agency__left-heading {
+  text-align: initial;
+}
+.agency__left-desc {
+  color: #6e6e6e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 2.1rem;
+}
+.agency__left-quality {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+.agency__left-quality::before, .agency__left-quality::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0.2rem;
+}
+.agency__left-quality::before {
+  left: 0;
+  width: 90%;
+  height: 0.5rem;
+  background-color: #434a54;
+}
+.agency__left-quality::after {
+  right: 0;
+  width: 10%;
+  height: 0.5rem;
+  background-color: #f1f1f1;
+}
+.agency__left-btn {
+  margin-top: 4rem;
+}
+.agency__right {
+  flex-shrink: 0;
+  padding-right: 4.92rem;
+  position: relative;
+}
+@media (max-width: 1199.98px) {
+  .agency__right {
+    flex-shrink: 1;
+  }
+}
+@media (max-width: 991.98px) {
+  .agency__right {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.92rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .agency__right {
+    padding: 0;
+  }
+}
+.agency__right-img {
+  display: block;
+  width: 100%;
+  height: 36rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.agency__right-decor {
+  position: absolute;
+  display: inline-block;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+@media (max-width: 575.98px) {
+  .agency__right-decor {
+    display: none;
+  }
+}
+.agency__right-decor--one, .agency__right-decor--three {
+  width: 13rem;
+  height: 8rem;
+}
+.agency__right-decor--one {
+  top: -10.2rem;
+  left: 12.7rem;
+}
+@media (max-width: 1199.98px) {
+  .agency__right-decor--one {
+    left: 7rem;
+  }
+}
+.agency__right-decor--two {
+  z-index: -1;
+  width: 20rem;
+  height: 13rem;
+  top: -4.48rem;
+  right: 0;
+}
+.agency__right-decor--three {
+  bottom: -1.5rem;
+  right: 0;
+}
+.agency__right-decor--four {
+  width: 15rem;
+  height: 15rem;
+  left: -1.92rem;
+  bottom: -8.6rem;
+}
+@media (max-width: 991.98px) {
+  .agency__right-decor--four {
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

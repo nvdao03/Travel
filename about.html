@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Love Travel | About</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Javascript -->
+        <script src="./assets/js/app.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Main Content -->
+        <main style="height: 5000px" class="main-about">
+            <!-- Agency -->
+            <section class="agency">
+                <div class="container">
+                    <div class="agency__body">
+                        <section class="agency__left">
+                            <h2 class="heading-section-lv2 agency__left-heading">
+                                The perfect come true with our Travel Agency
+                            </h2>
+                            <p class="agency__left-desc">
+                                We are a team of experienced travel experts who specialize in planning and organizing
+                                unforgettable travel experiences for our clients with a wide range of travel services,
+                                including flight bookings, hotel reservations and more.
+                            </p>
+                            <p class="agency__left-quality">Local travel guides</p>
+                            <a href="#!" class="btn btn--primary agency__left-btn">MORE INFO</a>
+                        </section>
+                        <figure class="agency__right">
+                            <img src="./assets/imgs/archive/chiang_mai.svg" alt="" class="agency__right-img" />
+                            <img
+                                src="./assets/imgs/archive/bangkok.svg"
+                                alt=""
+                                class="agency__right-decor agency__right-decor--one"
+                            />
+                            <img
+                                src="./assets/imgs/archive/nara.svg"
+                                alt=""
+                                class="agency__right-decor agency__right-decor--two"
+                            />
+                            <img
+                                src="./assets/imgs/preview/previews/rhodes.jpg"
+                                alt=""
+                                class="agency__right-decor agency__right-decor--three"
+                            />
+                            <img
+                                src="./assets/imgs/preview/previews/chao.svg"
+                                alt=""
+                                class="agency__right-decor agency__right-decor--four"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>

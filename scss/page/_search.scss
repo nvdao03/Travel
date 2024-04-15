@@ -7,10 +7,6 @@
 
     overflow-y: hidden;
 
-    @include abstracts.screen(md) {
-        margin-top: 10.2rem;
-    }
-
     &__wrap {
         padding-top: 39.16666%;
         position: relative;

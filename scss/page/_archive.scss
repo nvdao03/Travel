@@ -6,6 +6,7 @@
 
     @include abstracts.screen(lg) {
         padding: 4rem 0;
+        margin-top: 7.6rem;
     }
 
     @include abstracts.screen(md) {
