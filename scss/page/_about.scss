@@ -9,14 +9,22 @@
 }
 
 .agency {
-    padding: 12rem 0 6rem;
+    padding: 12rem 0 9rem;
 
     @include abstracts.screen(xxl) {
         padding-top: 4rem;
     }
 
+    @include abstracts.screen(lg) {
+        padding-bottom: 13rem;
+    }
+
     @include abstracts.screen(md) {
         padding-top: 2rem;
+    }
+
+    @include abstracts.screen(sm) {
+        padding-bottom: 4rem;
     }
 
     &__body {
@@ -194,6 +202,118 @@
 
         @include abstracts.screen(lg) {
             left: 0;
+        }
+    }
+}
+
+.perfect {
+    &--about {
+        padding: 12rem 0;
+        background: #f2f2f2;
+
+        @include abstracts.screen(lg) {
+            padding: 8rem 0;
+        }
+
+        @include abstracts.screen(lg) {
+            padding: 4rem 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+    }
+
+    &__heading {
+        text-align: initial;
+        width: 35%;
+
+        @include abstracts.screen(xxl) {
+            width: 50%;
+        }
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        width: 45%;
+
+        color: #6e6e6e;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+
+        @include abstracts.screen(lg) {
+            width: 80%;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 100%;
+        }
+    }
+
+    &__highlight {
+        text-decoration: underline;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem 3.34rem;
+
+        margin-top: 7rem;
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include abstracts.screen(md) {
+            grid-template-columns: 1fr;
+
+            margin-top: 4rem;
+        }
+    }
+
+    &__img {
+        display: inline-block;
+
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+
+    &__title {
+        display: block;
+
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 150%;
+
+        margin-top: 2rem;
+    }
+
+    &__text {
+        color: #6e6e6e;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+
+        margin-top: 2rem;
+
+        @include abstracts.screen(md) {
+            width: 80%;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 100%;
         }
     }
 }
