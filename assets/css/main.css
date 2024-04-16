@@ -4635,4 +4635,125 @@ button {
   border-radius: 1.5rem;
 }
 
+.vocation-about {
+  padding: 12rem 0;
+  background: #f2f2f2;
+}
+@media (max-width: 991.98px) {
+  .vocation-about {
+    padding: 4rem 0;
+  }
+}
+.vocation-about__row {
+  display: flex;
+  column-gap: 11.5rem;
+}
+@media (max-width: 1199.98px) {
+  .vocation-about__row {
+    column-gap: 6rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .vocation-about__row {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+.vocation-about__media {
+  width: 40rem;
+}
+@media (max-width: 991.98px) {
+  .vocation-about__media {
+    order: 2;
+    width: 100%;
+  }
+}
+.vocation-about__content {
+  flex: 1;
+}
+@media (max-width: 991.98px) {
+  .vocation-about__content {
+    width: 100%;
+  }
+}
+.vocation-about__heading {
+  text-align: initial;
+}
+@media (max-width: 991.98px) {
+  .vocation-about__heading {
+    text-align: center;
+  }
+}
+.vocation-about__wrap {
+  padding-top: 4rem;
+}
+@media (max-width: 1199.98px) {
+  .vocation-about__wrap {
+    padding-top: 2rem;
+  }
+}
+.vocation-about__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 3rem;
+}
+.vocation-about__group + .vocation-about__group {
+  border-top: 0.1rem solid #ccc;
+}
+.vocation-about__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 767.98px) {
+  .vocation-about__title {
+    font-size: 1.8rem;
+  }
+}
+.vocation-about__money {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+@media (max-width: 767.98px) {
+  .vocation-about__money {
+    font-size: 2.8rem;
+  }
+}
+.vocation-about__time {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 325%;
+}
+.vocation-about__inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5rem;
+}
+@media (max-width: 1199.98px) {
+  .vocation-about__inline {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 3rem;
+  }
+}
+.vocation-about__heading-lv3 {
+  text-align: initial;
+  width: 35rem;
+}
+@media (max-width: 1199.98px) {
+  .vocation-about__heading-lv3 {
+    width: 100%;
+  }
+}
+.vocation-about__btn {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  word-wrap: nowrap;
+}
+
 /*# sourceMappingURL=main.css.map */
