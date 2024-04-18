@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Love Travel | Blog</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Javascript -->
+        <script src="./assets/js/app.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Content -->
+        <main class="main-blog">
+            <!-- Blog -->
+            <section class="blogs">
+                <div class="container">
+                    <h2 class="heading-section-lv2 blogs__heading">Blog</h2>
+                    <div class="row">
+                        <!-- Item 1 -->
+                        <div class="col-6 col-md-12 gx-md-3">
+                            <article class="blogs__location">
+                                <figure class="blogs__media">
+                                    <img
+                                        src="./assets/imgs/archive/rocama.svg"
+                                        alt="Rocamadour"
+                                        class="blogs__media-img"
+                                    />
+                                </figure>
+                                <div class="blogs__content">
+                                    <span class="blogs__content-intro">April 7, 2023</span>
+                                    <span class="blogs__content-heading">Plan the Perfect Vacation</span>
+                                    <p class="blogs__content-desc">
+                                        Planning a vacation can be overwhelming, but this post offers a step-by-step
+                                        guide to help readers create a comprehensive travel itinerary. From choosing a
+                                        destination to booking accommodations and activities, readers will learn how to
+                                        plan a stress-free and enjoyable trip.
+                                    </p>
+                                    <a href="#!" class="btn btn--primary blogs__btn">Read More</a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="col-6 col-md-12 gx-md-3 gy-md-2">
+                            <article class="blogs__location">
+                                <figure class="blogs__media">
+                                    <img src="./assets/imgs/archive/tokyo.svg" alt="Tokyo" class="blogs__media-img" />
+                                </figure>
+                                <div class="blogs__content">
+                                    <span class="blogs__content-intro">April 7, 2023</span>
+                                    <span class="blogs__content-heading">Explore the Wonders</span>
+                                    <p class="blogs__content-desc">
+                                        Must-see destinations and experiences, including wildlife and cultural
+                                        experiences.
+                                    </p>
+                                    <a href="#!" class="btn btn--primary blogs__btn">Read More</a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="col-6 col-md-12 gx-md-3 gy-md-2">
+                            <article class="blogs__location">
+                                <figure class="blogs__media">
+                                    <img src="./assets/imgs/archive/luxor.svg" alt="luxor" class="blogs__media-img" />
+                                </figure>
+                                <div class="blogs__content">
+                                    <span class="blogs__content-intro">April 7, 2023</span>
+                                    <span class="blogs__content-heading">Traveling on a Budget</span>
+                                    <p class="blogs__content-desc">
+                                        Practical advice for travelers who want to see the world without breaking the
+                                        bank.
+                                    </p>
+                                    <a href="#!" class="btn btn--primary blogs__btn">Read More</a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="col-6 col-md-12 gx-md-3 gy-md-2">
+                            <article class="blogs__location">
+                                <figure class="blogs__media">
+                                    <img
+                                        src="./assets/imgs/typologies/Adventure Travel.svg"
+                                        alt="Adventure Travel"
+                                        class="blogs__media-img"
+                                    />
+                                </figure>
+                                <div class="blogs__content">
+                                    <span class="blogs__content-intro">April 7, 2023</span>
+                                    <span class="blogs__content-heading">Must-See Landmarks</span>
+                                    <p class="blogs__content-desc">
+                                        Iconic landmarks that make Europe one of the world's most popular travel
+                                        destinations.
+                                    </p>
+                                    <a href="#!" class="btn btn--primary blogs__btn">Read More</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>
