@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Love Travel | About Us</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Javascript -->
+        <script src="./assets/js/app.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Content -->
+        <main class="contact-main">
+            <!-- Contact info -->
+            <section class="contact-info">
+                <div class="container">
+                    <h2 class="heading-section-lv2 contact-info__heading">Contact Us</h2>
+                    <div class="contact-info__list">
+                        <!-- Item 1 -->
+                        <div class="contact-info__item">
+                            <div class="contact-info__inner contact-info__inner--top">
+                                <figure class="contact-info__media">
+                                    <img src="./assets/icons/location.svg" alt="" class="contact-info__icon" />
+                                </figure>
+                                <span class="contact-info__title">Location</span>
+                            </div>
+                            <div class="contact-info__ineer contact-info__inner--center">
+                                <span class="contact-info__text">Travel Agency</span>
+                                <span class="contact-info__desc">1626 Michigan Ave, Miami Beach</span>
+                            </div>
+                            <div class="contact-info__ineer">
+                                <span class="contact-info__text">Travel Operator</span>
+                                <span class="contact-info__desc">2001 Biscayne Blvd, Miami</span>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="contact-info__item">
+                            <div class="contact-info__inner contact-info__inner--top">
+                                <figure class="contact-info__media">
+                                    <img src="./assets/icons/phone.svg" alt="" class="contact-info__icon" />
+                                </figure>
+                                <span class="contact-info__title">Give us a call</span>
+                            </div>
+                            <div class="contact-info__ineer contact-info__inner--center">
+                                <span class="contact-info__text">Mobile Number</span>
+                                <span class="contact-info__desc">Paul Davis "Tour Consultant" : +1 629 592 593</span>
+                            </div>
+                            <div class="contact-info__ineer">
+                                <span class="contact-info__text">Office Number</span>
+                                <span class="contact-info__desc">Technical Office +1 963 935 836</span>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="contact-info__item">
+                            <div class="contact-info__inner contact-info__inner--top">
+                                <figure class="contact-info__media">
+                                    <img src="./assets/icons/emaill.svg" alt="" class="contact-info__icon" />
+                                </figure>
+                                <span class="contact-info__title">Write for anything</span>
+                            </div>
+                            <div class="contact-info__ineer contact-info__inner--center">
+                                <span class="contact-info__text">Quotes</span>
+                                <span class="contact-info__desc">
+                                    Write to this email for a detailed quotation
+                                    <a class="contact-info__link" href="mailto:nvdao003@gmail.com">
+                                        nvdao003@gmail.com
+                                    </a>
+                                    and information..
+                                </span>
+                            </div>
+                            <div class="contact-info__ineer">
+                                <span class="contact-info__text">Consulting</span>
+                                <span class="contact-info__desc">
+                                    Our free consultation service can be requested here
+                                    <a class="contact-info__link" href="mailto:nvdao003@gmail.com">
+                                        nvdao003@gmail.com
+                                    </a>
+                                    every day.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Touch -->
+            <section class="touch">
+                <div class="container">
+                    <div class="touch__inner">
+                        <h2 class="heading-section-lv2 touch__heading">Get in Touch</h2>
+                        <p class="touch__desc">
+                            Write to us for personalized travel advice or for information on group travel and
+                            <strong class="touch__highlight">last minute travel</strong>, all travel is insured and
+                            safe.
+                        </p>
+                        <form action="" method="post" class="touch__form">
+                            <input type="text" name="" id="" class="touch__form-input" placeholder="Type your name" />
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                class="touch__form-input"
+                                placeholder="Insert your email"
+                                checked
+                            />
+                            <input type="text" name="" id="" class="touch__form-input touch__form-input--bottom" />
+                            <button type="button" class="btn btn--primary touch__btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>
